@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F4C2D7B19739E12006045F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7A19739E12006045F8 /* Foundation.framework */; };
+		7F4C2D7D19739E12006045F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7C19739E12006045F8 /* CoreGraphics.framework */; };
+		7F4C2D7F19739E12006045F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7E19739E12006045F8 /* UIKit.framework */; };
+		7F4C2D8519739E12006045F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F4C2D8319739E12006045F8 /* InfoPlist.strings */; };
+		7F4C2D8719739E12006045F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2D8619739E12006045F8 /* main.m */; };
+		7F4C2D8B19739E12006045F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2D8A19739E12006045F8 /* AppDelegate.m */; };
+		7F4C2D8D19739E12006045F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F4C2D8C19739E12006045F8 /* Images.xcassets */; };
+		7F4C2D9419739E13006045F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D9319739E13006045F8 /* XCTest.framework */; };
+		7F4C2D9519739E13006045F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7A19739E12006045F8 /* Foundation.framework */; };
+		7F4C2D9619739E13006045F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7E19739E12006045F8 /* UIKit.framework */; };
+		7F4C2D9E19739E13006045F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F4C2D9C19739E13006045F8 /* InfoPlist.strings */; };
+		7F4C2DA019739E13006045F8 /* EMControllerManagerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2D9F19739E13006045F8 /* EMControllerManagerExampleTests.m */; };
+		7F4C2DA719739E2F006045F8 /* EMControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4DE97D197375840030B821 /* EMControllerManager.m */; };
+		7F4C2DAA19739E54006045F8 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2DA919739E54006045F8 /* Test1ViewController.m */; };
+		7F4C2DAD19739E63006045F8 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2DAC19739E63006045F8 /* Test2ViewController.m */; };
+		7F4C2DAF19739F4C006045F8 /* ViewControllerConfigPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F4C2DAE19739F4C006045F8 /* ViewControllerConfigPlist.plist */; };
+		7F4C2DB41973A3CE006045F8 /* Test3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2DB31973A3CE006045F8 /* Test3ViewController.m */; };
+		7F4C2DB71973A3DB006045F8 /* Test4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2DB61973A3DB006045F8 /* Test4ViewController.m */; };
+		7F4DE975197375160030B821 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F4DE973197375160030B821 /* InfoPlist.strings */; };
+		7F4DE97E197375840030B821 /* EMControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4DE97C197375840030B821 /* EMControllerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F4DE97F197375840030B821 /* EMControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4DE97D197375840030B821 /* EMControllerManager.m */; };
+		7FF4978F1973B7C200512033 /* ViewControllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FF4978E1973B7C200512033 /* ViewControllerConfig.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F4C2D9719739E13006045F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F4DE962197375160030B821 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F4C2D7719739E12006045F8;
+			remoteInfo = EMControllerManagerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F4C2D7819739E12006045F8 /* EMControllerManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMControllerManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4C2D7A19739E12006045F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F4C2D7C19739E12006045F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F4C2D7E19739E12006045F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F4C2D8219739E12006045F8 /* EMControllerManagerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMControllerManagerExample-Info.plist"; sourceTree = "<group>"; };
+		7F4C2D8419739E12006045F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F4C2D8619739E12006045F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F4C2D8819739E12006045F8 /* EMControllerManagerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMControllerManagerExample-Prefix.pch"; sourceTree = "<group>"; };
+		7F4C2D8919739E12006045F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F4C2D8A19739E12006045F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7F4C2D8C19739E12006045F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7F4C2D9219739E12006045F8 /* EMControllerManagerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMControllerManagerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4C2D9319739E13006045F8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7F4C2D9B19739E13006045F8 /* EMControllerManagerExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMControllerManagerExampleTests-Info.plist"; sourceTree = "<group>"; };
+		7F4C2D9D19739E13006045F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F4C2D9F19739E13006045F8 /* EMControllerManagerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMControllerManagerExampleTests.m; sourceTree = "<group>"; };
+		7F4C2DA819739E54006045F8 /* Test1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
+		7F4C2DA919739E54006045F8 /* Test1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test1ViewController.m; sourceTree = "<group>"; };
+		7F4C2DAB19739E63006045F8 /* Test2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
+		7F4C2DAC19739E63006045F8 /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
+		7F4C2DAE19739F4C006045F8 /* ViewControllerConfigPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ViewControllerConfigPlist.plist; sourceTree = "<group>"; };
+		7F4C2DB21973A3CE006045F8 /* Test3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test3ViewController.h; sourceTree = "<group>"; };
+		7F4C2DB31973A3CE006045F8 /* Test3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test3ViewController.m; sourceTree = "<group>"; };
+		7F4C2DB51973A3DB006045F8 /* Test4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test4ViewController.h; sourceTree = "<group>"; };
+		7F4C2DB61973A3DB006045F8 /* Test4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test4ViewController.m; sourceTree = "<group>"; };
+		7F4DE96E197375160030B821 /* EMControllerManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMControllerManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4DE972197375160030B821 /* EMControllerManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMControllerManager-Info.plist"; sourceTree = "<group>"; };
+		7F4DE974197375160030B821 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F4DE976197375160030B821 /* EMControllerManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMControllerManager-Prefix.pch"; sourceTree = "<group>"; };
+		7F4DE97C197375840030B821 /* EMControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMControllerManager.h; sourceTree = "<group>"; };
+		7F4DE97D197375840030B821 /* EMControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMControllerManager.m; sourceTree = "<group>"; };
+		7FF4978E1973B7C200512033 /* ViewControllerConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ViewControllerConfig.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F4C2D7519739E12006045F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4C2D7D19739E12006045F8 /* CoreGraphics.framework in Frameworks */,
+				7F4C2D7F19739E12006045F8 /* UIKit.framework in Frameworks */,
+				7F4C2D7B19739E12006045F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F4C2D8F19739E12006045F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4C2D9419739E13006045F8 /* XCTest.framework in Frameworks */,
+				7F4C2D9619739E13006045F8 /* UIKit.framework in Frameworks */,
+				7F4C2D9519739E13006045F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F4DE968197375160030B821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F4C2D7919739E12006045F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F4C2D7A19739E12006045F8 /* Foundation.framework */,
+				7F4C2D7C19739E12006045F8 /* CoreGraphics.framework */,
+				7F4C2D7E19739E12006045F8 /* UIKit.framework */,
+				7F4C2D9319739E13006045F8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F4C2D8019739E12006045F8 /* EMControllerManagerExample */ = {
+			isa = PBXGroup;
+			children = (
+				7F4C2D8919739E12006045F8 /* AppDelegate.h */,
+				7F4C2D8A19739E12006045F8 /* AppDelegate.m */,
+				7F4C2D8C19739E12006045F8 /* Images.xcassets */,
+				7F4C2D8119739E12006045F8 /* Supporting Files */,
+				7F4C2DA819739E54006045F8 /* Test1ViewController.h */,
+				7F4C2DA919739E54006045F8 /* Test1ViewController.m */,
+				7F4C2DAB19739E63006045F8 /* Test2ViewController.h */,
+				7F4C2DAC19739E63006045F8 /* Test2ViewController.m */,
+				7F4C2DB21973A3CE006045F8 /* Test3ViewController.h */,
+				7F4C2DB31973A3CE006045F8 /* Test3ViewController.m */,
+				7F4C2DB51973A3DB006045F8 /* Test4ViewController.h */,
+				7F4C2DB61973A3DB006045F8 /* Test4ViewController.m */,
+				7F4C2DAE19739F4C006045F8 /* ViewControllerConfigPlist.plist */,
+				7FF4978E1973B7C200512033 /* ViewControllerConfig.json */,
+			);
+			path = EMControllerManagerExample;
+			sourceTree = "<group>";
+		};
+		7F4C2D8119739E12006045F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F4C2D8219739E12006045F8 /* EMControllerManagerExample-Info.plist */,
+				7F4C2D8319739E12006045F8 /* InfoPlist.strings */,
+				7F4C2D8619739E12006045F8 /* main.m */,
+				7F4C2D8819739E12006045F8 /* EMControllerManagerExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F4C2D9919739E13006045F8 /* EMControllerManagerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F4C2D9F19739E13006045F8 /* EMControllerManagerExampleTests.m */,
+				7F4C2D9A19739E13006045F8 /* Supporting Files */,
+			);
+			path = EMControllerManagerExampleTests;
+			sourceTree = "<group>";
+		};
+		7F4C2D9A19739E13006045F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F4C2D9B19739E13006045F8 /* EMControllerManagerExampleTests-Info.plist */,
+				7F4C2D9C19739E13006045F8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F4DE961197375160030B821 = {
+			isa = PBXGroup;
+			children = (
+				7F4DE970197375160030B821 /* EMControllerManager */,
+				7F4C2D8019739E12006045F8 /* EMControllerManagerExample */,
+				7F4C2D9919739E13006045F8 /* EMControllerManagerExampleTests */,
+				7F4C2D7919739E12006045F8 /* Frameworks */,
+				7F4DE96F197375160030B821 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F4DE96F197375160030B821 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F4DE96E197375160030B821 /* EMControllerManager.framework */,
+				7F4C2D7819739E12006045F8 /* EMControllerManagerExample.app */,
+				7F4C2D9219739E12006045F8 /* EMControllerManagerExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F4DE970197375160030B821 /* EMControllerManager */ = {
+			isa = PBXGroup;
+			children = (
+				7F4DE971197375160030B821 /* Supporting Files */,
+				7F4DE97C197375840030B821 /* EMControllerManager.h */,
+				7F4DE97D197375840030B821 /* EMControllerManager.m */,
+			);
+			path = EMControllerManager;
+			sourceTree = "<group>";
+		};
+		7F4DE971197375160030B821 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F4DE972197375160030B821 /* EMControllerManager-Info.plist */,
+				7F4DE973197375160030B821 /* InfoPlist.strings */,
+				7F4DE976197375160030B821 /* EMControllerManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7F4DE969197375160030B821 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4DE97E197375840030B821 /* EMControllerManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7F4C2D7719739E12006045F8 /* EMControllerManagerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F4C2DA519739E13006045F8 /* Build configuration list for PBXNativeTarget "EMControllerManagerExample" */;
+			buildPhases = (
+				7F4C2D7419739E12006045F8 /* Sources */,
+				7F4C2D7519739E12006045F8 /* Frameworks */,
+				7F4C2D7619739E12006045F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMControllerManagerExample;
+			productName = EMControllerManagerExample;
+			productReference = 7F4C2D7819739E12006045F8 /* EMControllerManagerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F4C2D9119739E12006045F8 /* EMControllerManagerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F4C2DA619739E13006045F8 /* Build configuration list for PBXNativeTarget "EMControllerManagerExampleTests" */;
+			buildPhases = (
+				7F4C2D8E19739E12006045F8 /* Sources */,
+				7F4C2D8F19739E12006045F8 /* Frameworks */,
+				7F4C2D9019739E12006045F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F4C2D9819739E13006045F8 /* PBXTargetDependency */,
+			);
+			name = EMControllerManagerExampleTests;
+			productName = EMControllerManagerExampleTests;
+			productReference = 7F4C2D9219739E12006045F8 /* EMControllerManagerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F4DE96D197375160030B821 /* EMControllerManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F4DE979197375160030B821 /* Build configuration list for PBXNativeTarget "EMControllerManager" */;
+			buildPhases = (
+				7F4DE966197375160030B821 /* ShellScript */,
+				7F4DE967197375160030B821 /* Sources */,
+				7F4DE968197375160030B821 /* Frameworks */,
+				7F4DE969197375160030B821 /* Headers */,
+				7F4DE96A197375160030B821 /* Resources */,
+				7F4DE96B197375160030B821 /* ShellScript */,
+				7F4DE96C197375160030B821 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMControllerManager;
+			productName = EMControllerManager;
+			productReference = 7F4DE96E197375160030B821 /* EMControllerManager.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F4DE962197375160030B821 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = EastMoney;
+				TargetAttributes = {
+					7F4C2D9119739E12006045F8 = {
+						TestTargetID = 7F4DE96D197375160030B821;
+					};
+				};
+			};
+			buildConfigurationList = 7F4DE965197375160030B821 /* Build configuration list for PBXProject "EMControllerManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F4DE961197375160030B821;
+			productRefGroup = 7F4DE96F197375160030B821 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F4DE96D197375160030B821 /* EMControllerManager */,
+				7F4C2D7719739E12006045F8 /* EMControllerManagerExample */,
+				7F4C2D9119739E12006045F8 /* EMControllerManagerExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F4C2D7619739E12006045F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4C2DAF19739F4C006045F8 /* ViewControllerConfigPlist.plist in Resources */,
+				7F4C2D8519739E12006045F8 /* InfoPlist.strings in Resources */,
+				7FF4978F1973B7C200512033 /* ViewControllerConfig.json in Resources */,
+				7F4C2D8D19739E12006045F8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F4C2D9019739E12006045F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4C2D9E19739E13006045F8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F4DE96A197375160030B821 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4DE975197375160030B821 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F4DE966197375160030B821 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F4DE96B197375160030B821 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "HEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Versions/$FRAMEWORK_VERSION/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$(find $FRAMEWORK_HEADERS_DIR/. -not -type d 2> /dev/null | sed -e \"s@.*/@@g\")\n\nFIND_OPTS=\"\"\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n  if [ -n \"$FIND_OPTS\" ]; then\n    FIND_OPTS=\"$FIND_OPTS -o\"\n  fi\n  FIND_OPTS=\"$FIND_OPTS -name '$PUBLIC_HEADER'\"\ndone\n\nif [ -n \"$FIND_OPTS\" ]; then\n  for ORIG_HEADER in $(eval \"find $HEADERS_ROOT/. $FIND_OPTS\" 2> /dev/null | sed -e \"s@^$HEADERS_ROOT/./@@g\"); do\n    PUBLIC_HEADER=$(basename $ORIG_HEADER)\n    RELATIVE_PATH=$(dirname $ORIG_HEADER)\n    if [ -e $FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER ]; then\n      mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n      mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\n    fi\n  done\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F4DE96C197375160030B821 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Make sure the other platform gets built\n\necho \"Build other platform\"\n\necho xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n\n\n# Build the fat static library binary\n\necho \"Create universal static library\"\n\nif [[ \"$XCODE_VERSION_MAJOR\" == \"0500\" ]]\nthen\n    echo \"$DT_TOOLCHAIN_DIR/usr/bin/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$DT_TOOLCHAIN_DIR/usr/bin/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\nelse\n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\nfi \n\necho mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nmv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n\n\n# Build framework structure\n\necho \"Build symlinks\"\n\necho ln -sfh $FRAMEWORK_VERSION \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\nln -sfh $FRAMEWORK_VERSION \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\necho ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\necho ln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\nln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\necho ln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\nln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\n\n\n# Link to binary for unit tests\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework\"\nln -sfh \"../${WRAPPER_NAME}/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework/.fake_fw_testing\"\n\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\n# Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n\necho \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n\necho rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\necho cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F4C2D7419739E12006045F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4C2DB71973A3DB006045F8 /* Test4ViewController.m in Sources */,
+				7F4C2DAD19739E63006045F8 /* Test2ViewController.m in Sources */,
+				7F4C2DAA19739E54006045F8 /* Test1ViewController.m in Sources */,
+				7F4C2DB41973A3CE006045F8 /* Test3ViewController.m in Sources */,
+				7F4C2DA719739E2F006045F8 /* EMControllerManager.m in Sources */,
+				7F4C2D8B19739E12006045F8 /* AppDelegate.m in Sources */,
+				7F4C2D8719739E12006045F8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F4C2D8E19739E12006045F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4C2DA019739E13006045F8 /* EMControllerManagerExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F4DE967197375160030B821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4DE97F197375840030B821 /* EMControllerManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F4C2D9819739E13006045F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F4C2D7719739E12006045F8 /* EMControllerManagerExample */;
+			targetProxy = 7F4C2D9719739E13006045F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F4C2D8319739E12006045F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F4C2D8419739E12006045F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F4C2D9C19739E13006045F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F4C2D9D19739E13006045F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F4DE973197375160030B821 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F4DE974197375160030B821 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F4C2DA119739E13006045F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMControllerManagerExample/EMControllerManagerExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EMControllerManagerExample/EMControllerManagerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F4C2DA219739E13006045F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMControllerManagerExample/EMControllerManagerExample-Prefix.pch";
+				INFOPLIST_FILE = "EMControllerManagerExample/EMControllerManagerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7F4C2DA319739E13006045F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EMControllerManager.framework/Versions/A/EMControllerManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMControllerManagerExample/EMControllerManagerExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EMControllerManagerExampleTests/EMControllerManagerExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7F4C2DA419739E13006045F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EMControllerManager.framework/Versions/A/EMControllerManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMControllerManagerExample/EMControllerManagerExample-Prefix.pch";
+				INFOPLIST_FILE = "EMControllerManagerExampleTests/EMControllerManagerExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		7F4DE977197375160030B821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F4DE978197375160030B821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F4DE97A197375160030B821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMControllerManager/EMControllerManager-Prefix.pch";
+				INFOPLIST_FILE = "EMControllerManager/EMControllerManager-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		7F4DE97B197375160030B821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMControllerManager/EMControllerManager-Prefix.pch";
+				INFOPLIST_FILE = "EMControllerManager/EMControllerManager-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F4C2DA519739E13006045F8 /* Build configuration list for PBXNativeTarget "EMControllerManagerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F4C2DA119739E13006045F8 /* Debug */,
+				7F4C2DA219739E13006045F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F4C2DA619739E13006045F8 /* Build configuration list for PBXNativeTarget "EMControllerManagerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F4C2DA319739E13006045F8 /* Debug */,
+				7F4C2DA419739E13006045F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F4DE965197375160030B821 /* Build configuration list for PBXProject "EMControllerManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F4DE977197375160030B821 /* Debug */,
+				7F4DE978197375160030B821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F4DE979197375160030B821 /* Build configuration list for PBXNativeTarget "EMControllerManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F4DE97A197375160030B821 /* Debug */,
+				7F4DE97B197375160030B821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F4DE962197375160030B821 /* Project object */;
+}
