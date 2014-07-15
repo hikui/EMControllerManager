@@ -3,7 +3,7 @@
 //  EMControllerManager
 //
 //  Created by 缪和光 on 14-7-14.
-//  Copyright (c) 2014年 EastMoney. All rights reserved.
+//  Copyright (c) 2014年 缪和光. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -19,6 +19,17 @@ typedef NS_ENUM(NSUInteger, EMControllerManagerConfigFileType) {
 
 @optional
 - (void)initializePropertiesWithDictionary:(NSDictionary *)dict;
+
+@end
+
+
+@interface EMControllerConfigItem : NSObject
+
+@property (nonatomic, unsafe_unretained) Class controllerClass;
+@property (nonatomic, copy) NSString *controllerClassName;
+@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSDictionary *dependencies;
+@property (nonatomic, unsafe_unretained) NSInteger tag;
 
 @end
 

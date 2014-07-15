@@ -34,11 +34,15 @@
     
     // You can also add extra config infomation
     [cm addViewControllerConfigWithBlock:^(NSMutableDictionary *extraNameClassMapping) {
-        [extraNameClassMapping setObject:@"Test3ViewController" forKey:@"Test3"];
         
-        // This is a better practice, because it can be treated properly when you rename view controllers with Xcode's refactor functionality.
-        // You can do this in one paticular place of your program, e.g. application:didFinishLaunchingWithOptions:
-        [extraNameClassMapping setObject:NSStringFromClass([Test4ViewController class]) forKey:@"Test4"];
+        EMControllerConfigItem *item1 = [[EMControllerConfigItem alloc]init];
+        item1.controllerClassName = @"Test3ViewController";
+        
+        EMControllerConfigItem *item2 = [[EMControllerConfigItem alloc]init];
+        item2.controllerClass = [Test4ViewController class];
+        
+        [extraNameClassMapping setObject:item1 forKey:@"Test3"];
+        [extraNameClassMapping setObject:item2 forKey:@"Test4"];
     }];
     
     UIViewController *vc3 = [cm createViewControllerInstanceNamed:@"Test3" withPropertyValues:@{@"dummyInfo":@"aaaa"}];

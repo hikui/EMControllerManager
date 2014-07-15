@@ -7,6 +7,7 @@
 //
 
 #import "Test1ViewController.h"
+#import "Test2ViewController.h"
 
 @interface Test1ViewController ()
 
@@ -32,6 +33,9 @@
     label.text = [NSString stringWithFormat:@"%d",self.number];
     [self.view addSubview:label];
     // Do any additional setup after loading the view.
+    NSLog(@"%@\n%d\n%d\n",self.dependentString,self.dependentInt,self.dependentBool);
+    
+    NSLog(@"Dependent VC:%@",self.test2ViewController);
 }
 
 - (void)didReceiveMemoryWarning
