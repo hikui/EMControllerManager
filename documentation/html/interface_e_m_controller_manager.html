@@ -138,9 +138,16 @@ Class Methods</h2></td></tr>
 
 <p>To add the extra view controller configuration. </p>
 <p>Example: </p><pre class="fragment">[cm addViewControllerConfigWithBlock:^(NSMutableDictionary *extraNameClassMapping) {
-       [extraNameClassMapping setObject:@"Test3ViewController" forKey:@"Test3"];
-       [extraNameClassMapping setObject:NSStringFromClass([Test4ViewController class]) forKey:@"Test4"];
-}];
+
+       EMControllerConfigItem *item1 = [[EMControllerConfigItem alloc]init];
+       item1.controllerClassName = @"Test3ViewController";
+
+       EMControllerConfigItem *item2 = [[EMControllerConfigItem alloc]init];
+       item2.controllerClass = [Test4ViewController class];
+
+       [extraNameClassMapping setObject:item1 forKey:@"Test3"];
+       [extraNameClassMapping setObject:item2 forKey:@"Test4"];
+   }];
 </pre><p>Notice the second approach, it is a better practice because it can be treated properly when you are renaming the class with Xcode's refactor tool.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -220,8 +227,18 @@ Class Methods</h2></td></tr>
 <p>Load the configuration file. </p>
 <p>The configuration file must be a JSON file or a plist file.</p>
 <p>A typical JSON config file example: </p><pre class="fragment">{
-   "VCName1":"ViewControllerClassName1",
-   "VCName1":"ViewControllerClassName1",
+   "Test1":{
+       "ClassName":"Test1ViewController",
+       "Description":"hahahahahhahaha",
+       "Tag":"100",
+       "Dependencies":{
+           "dependentString":"@hahahahahah",
+           "dependentInt":1000,
+           "dependentBool":true,
+           "test2ViewController":"Test2"
+       }
+   },
+   "Test2":"Test2ViewController"
 }
 </pre><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -266,7 +283,7 @@ Class Methods</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 14 2014 14:40:49 for EMControllerManager by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 15 2014 13:43:18 for EMControllerManager by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

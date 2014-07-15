@@ -46,8 +46,18 @@ typedef NS_ENUM(NSUInteger, EMControllerManagerConfigFileType) {
  A typical JSON config file example:
  
      {
-        "VCName1":"ViewControllerClassName1",
-        "VCName1":"ViewControllerClassName1",
+        "Test1":{
+            "ClassName":"Test1ViewController",
+            "Description":"hahahahahhahaha",
+            "Tag":"100",
+            "Dependencies":{
+                "dependentString":"@hahahahahah",
+                "dependentInt":1000,
+                "dependentBool":true,
+                "test2ViewController":"Test2"
+            }
+        },
+        "Test2":"Test2ViewController"
      }
  
  @param path  The path of the configuration file.
@@ -74,9 +84,16 @@ typedef NS_ENUM(NSUInteger, EMControllerManagerConfigFileType) {
  Example:
  
      [cm addViewControllerConfigWithBlock:^(NSMutableDictionary *extraNameClassMapping) {
-            [extraNameClassMapping setObject:@"Test3ViewController" forKey:@"Test3"];
-            [extraNameClassMapping setObject:NSStringFromClass([Test4ViewController class]) forKey:@"Test4"];
-     }];
+            
+            EMControllerConfigItem *item1 = [[EMControllerConfigItem alloc]init];
+            item1.controllerClassName = @"Test3ViewController";
+            
+            EMControllerConfigItem *item2 = [[EMControllerConfigItem alloc]init];
+            item2.controllerClass = [Test4ViewController class];
+            
+            [extraNameClassMapping setObject:item1 forKey:@"Test3"];
+            [extraNameClassMapping setObject:item2 forKey:@"Test4"];
+        }];
  
  Notice the second approach, it is a better practice because it can be treated properly when you are renaming the class with Xcode's refactor tool.
  
