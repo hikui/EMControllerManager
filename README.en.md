@@ -13,7 +13,7 @@ ViewController1:
 		[self.navigationViewController pushViewController:vc2 animate:YES];
 	}
 	
-In this situation, `ViewController1` should know the existance of `ViewController2` before it can alloc one. They are tightly coupled and hardly to reuse.
+In this situation, `ViewController1` should know the existence of `ViewController2` before it can alloc one. Therefore, they are tightly coupled and hardly to reuse.
 
 With EMControllerManager, you can write code like:
 
@@ -27,7 +27,7 @@ ViewController1:
 		[self.navigationViewController pushViewController:vc2 animate:YES];
 	}
 	
-In this way, `ViewController1` doesn't need to know `ViewController2`, and you don't need to import `ViewController2` into `ViewController1.m`
+In this way, `ViewController1` doesn't need to know `ViewController2`, and you don't need to import `ViewController2.h` into `ViewController1.m`
 
 ## Configuration
 The configuration file can be either a JSON file or a plist file. Take JSON file as an example, a typical configuration code should be like this:
@@ -50,12 +50,12 @@ The configuration file can be either a JSON file or a plist file. Take JSON file
 * `Test1` and `Test2` are controller names. You can name that as you wish. And when you are using `createViewControllerInstanceNamed:withPropertyValues:`, the parameter `Named` should follow this field.
 * `ClassName` is the real class name of the view controller. It should match the interface name. If you fill a wrong value to this field, the `createViewControllerInstanceNamed:withPropertyValues:` is impossible to create an instance (will return `nil`), and you will receive a warning, though this won't crash your app.
 * `Description` and `Tag` are optional, actually they are just comments (JSON doesn't support comments, so I have to use a redundant field).
-* `Dependencies` are something that can be injected into the new instance. It support all basic types that are supported both by JSON and Objective C, e.g. string, int, float, bool. Furthermore, you can inject another controller name that are configured in this file. The manager will create an instance of that class and inject it. However, you should pay attention that if you want to inject a string rather than a configured class reference, you need to add an `'@'` as the prefix, otherwise the string will be recognized as the controller name of another configured class. 
+* `Dependencies` are something that can be injected into the new instance. It supports all basic types that are supported both by JSON and Objective C, e.g. string, int, float, bool. Furthermore, you can inject another controller name that are configured in this file. The manager will create an instance of that class and inject it. However, you should pay attention that if you want to inject a string rather than a configured class reference, you need to add an `'@'` as the prefix, otherwise the string will be recognized as the controller name of another configured class. Also, a recursive dependency is not allowed.
 
-Also, you can use a plist instead, the rules are the same as that for JSON.
+You can use a plist instead, the rules are the same as that for JSON.
 
 ## Additional configuration
-Besides configuration files, you can also add configurations dynamically in your code.
+Besides configuration files, you can add configurations dynamically in your code.
 
 Here is an example:
 
@@ -94,4 +94,4 @@ In your view controller:
 	// Initialize properties using two methods
 	UIViewController *vc = [cm createViewControllerInstanceNamed:@"Test1" withPropertyValues:@{@"color":[UIColor redColor],@"number":@(1)}];
 	
-`createViewControllerInstanceNamed:withPropertyValues:` will create an instance of a configured class. You can pass a dictionary through `PropertyValues`. How these values are handled depends on the instance. If it conforms the `EMControllerManagerInitProtocol` and responds to `initializePropertiesWithDictionary:`, then this method will be called, otherwise, the values in the dictionary will be injected into the instance directly by KVC.
+`createViewControllerInstanceNamed:withPropertyValues:` will create an instance of a configured class. You can pass a dictionary through `PropertyValues`. How these values are handled depends on the instance. If it conforms the `EMControllerManagerInitProtocol` and responds to `initializePropertiesWithDictionary:`, then this method will be called. Otherwise, the values in the dictionary will be injected into the instance directly by KVC.
