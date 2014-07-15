@@ -93,4 +93,4 @@ ViewController1:
 	// Initialize properties using two methods
 	UIViewController *vc = [cm createViewControllerInstanceNamed:@"Test1" withPropertyValues:@{@"color":[UIColor redColor],@"number":@(1)}];
 	
-其中，`createViewControllerInstanceNamed:withPropertyValues:`中的`propertyValues`是一个Dictionary，用于对目标controller的property注入。当目标view controller实现了`EMControllerManagerInitProtocol`，则会去调用目标view controller的`initializePropertiesWithDictionary:`方法，否则直接用KVO注入。
+其中，`createViewControllerInstanceNamed:withPropertyValues:`中的`propertyValues`是一个Dictionary，用于对目标controller的property注入。当目标view controller实现了`EMControllerManagerInitProtocol`，则会去调用目标view controller的`initializePropertiesWithDictionary:`方法，否则直接用KVC注入。
