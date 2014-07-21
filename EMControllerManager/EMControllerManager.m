@@ -198,10 +198,15 @@ static NSString *kEMControllerCOnfigKeyTag          = @"Tag";
                         return;
                     }
                     
-                    [instance setValue:dependentViewController forKeyPath:propertyName];
+                    if ([instance respondsToSelector:NSSelectorFromString(propertyName)]) {
+                        [instance setValue:dependentViewController forKeyPath:propertyName];
+                    }
                 }
             }else{
-                [instance setValue:obj forKeyPath:propertyName];
+                if ([instance respondsToSelector:NSSelectorFromString(propertyName)]) {
+                    // To ensure that the existence of a property.
+                    [instance setValue:obj forKeyPath:propertyName];
+                }
             }
         }];
 
@@ -210,7 +215,9 @@ static NSString *kEMControllerCOnfigKeyTag          = @"Tag";
             [((id<EMControllerManagerInitProtocol> )instance) initializePropertiesWithDictionary:keyValueMap];
         }else{
             [keyValueMap enumerateKeysAndObjectsUsingBlock:^(NSString *key, id obj, BOOL *stop) {
-                [instance setValue:obj forKeyPath:key];
+                if ([instance respondsToSelector:NSSelectorFromString(key)]) {
+                    [instance setValue:obj forKeyPath:key];
+                }
             }];
         }
     }
