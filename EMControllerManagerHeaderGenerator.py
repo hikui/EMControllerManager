@@ -3,12 +3,16 @@
 import getopt
 import json
 import sys
+import plistlib
 
 def generate_definition(input_file, output_path, prefix):
 
-	with open(input_file, 'r') as json_file:
-		json_string = json_file.read()
-		config_dict = json.loads(json_string)
+	with open(input_file, 'r') as f:
+		raw_string = f.read()
+		try:
+			config_dict = json.loads(raw_string)
+		except Exception, e:
+			config_dict = plistlib.readPlistFromString(raw_string)
 		if not isinstance(config_dict,dict):
 			sys.stderr.write('configuration file is not failed')
 			exit(-1)

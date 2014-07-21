@@ -27,6 +27,7 @@
 		7F4DE975197375160030B821 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F4DE973197375160030B821 /* InfoPlist.strings */; };
 		7F4DE97E197375840030B821 /* EMControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4DE97C197375840030B821 /* EMControllerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F4DE97F197375840030B821 /* EMControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4DE97D197375840030B821 /* EMControllerManager.m */; };
+		7FAF60F6197CA43F00D9BE2F /* ViewControllerConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF60F5197CA43F00D9BE2F /* ViewControllerConfig.plist */; };
 		7FF4978F1973B7C200512033 /* ViewControllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FF4978E1973B7C200512033 /* ViewControllerConfig.json */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		7F4DE976197375160030B821 /* EMControllerManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMControllerManager-Prefix.pch"; sourceTree = "<group>"; };
 		7F4DE97C197375840030B821 /* EMControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMControllerManager.h; sourceTree = "<group>"; };
 		7F4DE97D197375840030B821 /* EMControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMControllerManager.m; sourceTree = "<group>"; };
+		7FAF60F5197CA43F00D9BE2F /* ViewControllerConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ViewControllerConfig.plist; sourceTree = "<group>"; };
 		7FF4978E1973B7C200512033 /* ViewControllerConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ViewControllerConfig.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 				7F4C2DB51973A3DB006045F8 /* Test4ViewController.h */,
 				7F4C2DB61973A3DB006045F8 /* Test4ViewController.m */,
 				7FF4978E1973B7C200512033 /* ViewControllerConfig.json */,
+				7FAF60F5197CA43F00D9BE2F /* ViewControllerConfig.plist */,
 			);
 			path = EMControllerManagerExample;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F4C2D8519739E12006045F8 /* InfoPlist.strings in Resources */,
+				7FAF60F6197CA43F00D9BE2F /* ViewControllerConfig.plist in Resources */,
 				7FF4978F1973B7C200512033 /* ViewControllerConfig.json in Resources */,
 				7F4C2D8D19739E12006045F8 /* Images.xcassets in Resources */,
 			);

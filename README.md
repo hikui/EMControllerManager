@@ -95,3 +95,12 @@ In your view controller:
 	UIViewController *vc = [cm createViewControllerInstanceNamed:@"Test1" withPropertyValues:@{@"color":[UIColor redColor],@"number":@(1)}];
 	
 `createViewControllerInstanceNamed:withPropertyValues:` will create an instance of a configured class. You can pass a dictionary through `PropertyValues`. How these values are handled depends on the instance. If it conforms the `EMControllerManagerInitProtocol` and responds to `initializePropertiesWithDictionary:`, then this method will be called. Otherwise, the values in the dictionary will be injected into the instance directly by KVC.
+
+## Autocompelete?
+
+I hate configuration files because it won't trigger the autocompelete tool. Appearently, it's a drawback. But we still have some workarounds. The way I deal with the problem is by using a python script to generate a header file, where all controller names are defined in macros, thus we can trigger the autocomplete. There is a python script named `EMControllerManagerHeaderGenerator.py` in this repository. You can generate the header file by a command like:
+
+	python EMControllerManagerHeaderGenerator.py -i your_config_file -o header_file_path -p prefix
+	
+
+
