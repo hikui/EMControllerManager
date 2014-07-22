@@ -43,6 +43,8 @@ typedef NS_ENUM(NSUInteger, EMControllerManagerConfigFileType) {
  
  The configuration file must be a JSON file or a plist file.
  
+ Note that this method will override all configured classes.
+ 
  A typical JSON config file example:
  
      {
@@ -66,7 +68,29 @@ typedef NS_ENUM(NSUInteger, EMControllerManagerConfigFileType) {
  
  @return Return YES, if there's no problem. Return NO, if some problems occured during loading.
  */
-- (BOOL)loadConfigFileOfPath:(NSString *)path fileType:(EMControllerManagerConfigFileType)type error:(NSError **)error;
+- (BOOL)loadConfigFileOfPath:(NSString *)path
+                    fileType:(EMControllerManagerConfigFileType)type
+                       error:(NSError **)error;
+
+/**
+ Add configuration from a file.
+ 
+ This won't override your old configuration, and allows you to load multiple config files in one app.
+ 
+ @param path  The path of the configuration file.
+ @param type  The type of the configuration file. There are two possible values.
+ @param error If an error occured (e.g. file not exist or parsing JSON failed), the detailed error information will pass throungh this parameter.
+ 
+ @return Return YES, if there's no problem. Return NO, if some problems occured during loading.
+ */
+- (BOOL)addConfigFileOfPath:(NSString *)path
+                   fileType:(EMControllerManagerConfigFileType)type
+                      error:(NSError **)error;
+
+/**
+ To cleanup the mapping.
+ */
+- (void)removeAllConfiguredClasses;
 
 /**
  Create an instance according the view controller's name.

@@ -13,6 +13,8 @@ static NSString *kEMControllerConfigKeyDescription  = @"Description";
 static NSString *kEMControllerConfigKeyDependencies = @"Dependencies";
 static NSString *kEMControllerCOnfigKeyTag          = @"Tag";
 
+static NSString *errorDomain = @"EMControllerManagerErrorDomain";
+
 @implementation EMControllerConfigItem @end
 
 @interface EMControllerManager()
@@ -41,9 +43,9 @@ static NSString *kEMControllerCOnfigKeyTag          = @"Tag";
     return self;
 }
 
-- (BOOL)loadConfigFileOfPath:(NSString *)path fileType:(EMControllerManagerConfigFileType)type error:(NSError **)error {
-    
-    static NSString *errorDomain = @"EMControllerManagerErrorDomain";
+- (BOOL)addConfigFileOfPath:(NSString *)path
+                   fileType:(EMControllerManagerConfigFileType)type
+                      error:(NSError **)error {
     
     NSFileManager *fm = [NSFileManager defaultManager];
     if (![fm fileExistsAtPath:path]) {
@@ -93,15 +95,14 @@ static NSString *kEMControllerCOnfigKeyTag          = @"Tag";
                 NSError *e = [NSError errorWithDomain:errorDomain code:-1 userInfo:@{@"message":@"Unsupported file type"}];
                 *error = e;
             }
-                
+            
             return NO;
         }
             break;
     }
     
-    [self.controllerConfigMap removeAllObjects];
     if (configMapping) {
-        
+
         // check the validation of keys and values
         [configMapping enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
             
@@ -152,6 +153,20 @@ static NSString *kEMControllerCOnfigKeyTag          = @"Tag";
         *error = nil;
     }
     return YES;
+
+}
+
+- (BOOL)loadConfigFileOfPath:(NSString *)path
+                    fileType:(EMControllerManagerConfigFileType)type
+                       error:(NSError **)error {
+    
+    [self.controllerConfigMap removeAllObjects];
+    return [self addConfigFileOfPath:path fileType:type error:error];
+    
+}
+
+- (void)removeAllConfiguredClasses {
+    [self.controllerConfigMap removeAllObjects];
 }
 
 - (id)createViewControllerInstanceNamed:(NSString *)viewControllerName
