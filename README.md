@@ -1,4 +1,4 @@
-# The Introduction of EMControllerManager
+# The Introduction to EMControllerManager
 
 ## Purpose
 It's a common scenario that we want to push a view controller inside another view controller. Assume that we have `ViewController1` and `ViewController2`. Now, we want to push `ViewController2` when a button in the `ViewController1` is touched. A standard practice would be:
