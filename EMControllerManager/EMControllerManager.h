@@ -11,13 +11,46 @@
 
 typedef NS_ENUM(NSUInteger, EMControllerManagerConfigFileType) {
     EMControllerManagerConfigFileTypeJSON,
-    EMControllerManagerConfigFileTypePlist
+    EMControllerManagerConfigFileTypePlist,
+    EMControllerManagerConfigFileTypeYAML
 };
 
+/**
+ YAML Adapter
+ 
+ YAML parser is not supported by system libraries.
+ If you want to use YAML configuration files, you need to
+ implement this protocol by yourself.
+ */
+@protocol EMControllerManagerYAMLAdapter <NSObject>
+
+@required
+/**
+ Parse a YAML file to a dictionary
+ 
+ @param data YAML file data
+ @param error Error in parsing
+ 
+ @return result dictionary
+ */
+- (NSDictionary *)dictionaryFromYAMLData:(NSData *)data error:(NSError **)error;
+
+@end
 
 @protocol EMControllerManagerInitProtocol <NSObject>
 
 @optional
+/**
+ Init properties after a class being created.
+ 
+ Useful values will be passed in the dict. The receiver can 
+ initialize its properties accordingly.
+ 
+ If not implemented, the EMControllerManager will inject 
+ values through KVC.
+ 
+ @param dict A dictionary that contains useful values
+ */
 - (void)initializePropertiesWithDictionary:(NSDictionary *)dict;
 
 @end
@@ -35,6 +68,8 @@ typedef NS_ENUM(NSUInteger, EMControllerManagerConfigFileType) {
 
 
 @interface EMControllerManager : NSObject
+
+@property (nonatomic, strong) id<EMControllerManagerYAMLAdapter> yamlAdapter;
 
 + (instancetype)sharedInstance;
 

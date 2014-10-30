@@ -7,96 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F4C2D7B19739E12006045F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7A19739E12006045F8 /* Foundation.framework */; };
-		7F4C2D7D19739E12006045F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7C19739E12006045F8 /* CoreGraphics.framework */; };
-		7F4C2D7F19739E12006045F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7E19739E12006045F8 /* UIKit.framework */; };
-		7F4C2D8519739E12006045F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F4C2D8319739E12006045F8 /* InfoPlist.strings */; };
-		7F4C2D8719739E12006045F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2D8619739E12006045F8 /* main.m */; };
-		7F4C2D8B19739E12006045F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2D8A19739E12006045F8 /* AppDelegate.m */; };
-		7F4C2D8D19739E12006045F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F4C2D8C19739E12006045F8 /* Images.xcassets */; };
-		7F4C2D9419739E13006045F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D9319739E13006045F8 /* XCTest.framework */; };
-		7F4C2D9519739E13006045F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7A19739E12006045F8 /* Foundation.framework */; };
-		7F4C2D9619739E13006045F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7E19739E12006045F8 /* UIKit.framework */; };
-		7F4C2D9E19739E13006045F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F4C2D9C19739E13006045F8 /* InfoPlist.strings */; };
-		7F4C2DA019739E13006045F8 /* EMControllerManagerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2D9F19739E13006045F8 /* EMControllerManagerExampleTests.m */; };
-		7F4C2DA719739E2F006045F8 /* EMControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4DE97D197375840030B821 /* EMControllerManager.m */; };
-		7F4C2DAA19739E54006045F8 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2DA919739E54006045F8 /* Test1ViewController.m */; };
-		7F4C2DAD19739E63006045F8 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2DAC19739E63006045F8 /* Test2ViewController.m */; };
-		7F4C2DB41973A3CE006045F8 /* Test3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2DB31973A3CE006045F8 /* Test3ViewController.m */; };
-		7F4C2DB71973A3DB006045F8 /* Test4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C2DB61973A3DB006045F8 /* Test4ViewController.m */; };
 		7F4DE975197375160030B821 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F4DE973197375160030B821 /* InfoPlist.strings */; };
 		7F4DE97E197375840030B821 /* EMControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4DE97C197375840030B821 /* EMControllerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F4DE97F197375840030B821 /* EMControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4DE97D197375840030B821 /* EMControllerManager.m */; };
-		7FAF60F6197CA43F00D9BE2F /* ViewControllerConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF60F5197CA43F00D9BE2F /* ViewControllerConfig.plist */; };
-		7FF4978F1973B7C200512033 /* ViewControllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FF4978E1973B7C200512033 /* ViewControllerConfig.json */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7F4C2D9719739E13006045F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7F4DE962197375160030B821 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7F4C2D7719739E12006045F8;
-			remoteInfo = EMControllerManagerExample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		7F4C2D7819739E12006045F8 /* EMControllerManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMControllerManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4C2D7A19739E12006045F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7F4C2D7C19739E12006045F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7F4C2D7E19739E12006045F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		7F4C2D8219739E12006045F8 /* EMControllerManagerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMControllerManagerExample-Info.plist"; sourceTree = "<group>"; };
-		7F4C2D8419739E12006045F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7F4C2D8619739E12006045F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7F4C2D8819739E12006045F8 /* EMControllerManagerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMControllerManagerExample-Prefix.pch"; sourceTree = "<group>"; };
-		7F4C2D8919739E12006045F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7F4C2D8A19739E12006045F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7F4C2D8C19739E12006045F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7F4C2D9219739E12006045F8 /* EMControllerManagerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMControllerManagerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4C2D9319739E13006045F8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7F4C2D9B19739E13006045F8 /* EMControllerManagerExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMControllerManagerExampleTests-Info.plist"; sourceTree = "<group>"; };
-		7F4C2D9D19739E13006045F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7F4C2D9F19739E13006045F8 /* EMControllerManagerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMControllerManagerExampleTests.m; sourceTree = "<group>"; };
-		7F4C2DA819739E54006045F8 /* Test1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
-		7F4C2DA919739E54006045F8 /* Test1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test1ViewController.m; sourceTree = "<group>"; };
-		7F4C2DAB19739E63006045F8 /* Test2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
-		7F4C2DAC19739E63006045F8 /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
-		7F4C2DB21973A3CE006045F8 /* Test3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test3ViewController.h; sourceTree = "<group>"; };
-		7F4C2DB31973A3CE006045F8 /* Test3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test3ViewController.m; sourceTree = "<group>"; };
-		7F4C2DB51973A3DB006045F8 /* Test4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test4ViewController.h; sourceTree = "<group>"; };
-		7F4C2DB61973A3DB006045F8 /* Test4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test4ViewController.m; sourceTree = "<group>"; };
 		7F4DE96E197375160030B821 /* EMControllerManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMControllerManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4DE972197375160030B821 /* EMControllerManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMControllerManager-Info.plist"; sourceTree = "<group>"; };
 		7F4DE974197375160030B821 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F4DE976197375160030B821 /* EMControllerManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMControllerManager-Prefix.pch"; sourceTree = "<group>"; };
 		7F4DE97C197375840030B821 /* EMControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMControllerManager.h; sourceTree = "<group>"; };
 		7F4DE97D197375840030B821 /* EMControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMControllerManager.m; sourceTree = "<group>"; };
-		7FAF60F5197CA43F00D9BE2F /* ViewControllerConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ViewControllerConfig.plist; sourceTree = "<group>"; };
-		7FF4978E1973B7C200512033 /* ViewControllerConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ViewControllerConfig.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7F4C2D7519739E12006045F8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F4C2D7D19739E12006045F8 /* CoreGraphics.framework in Frameworks */,
-				7F4C2D7F19739E12006045F8 /* UIKit.framework in Frameworks */,
-				7F4C2D7B19739E12006045F8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F4C2D8F19739E12006045F8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F4C2D9419739E13006045F8 /* XCTest.framework in Frameworks */,
-				7F4C2D9619739E13006045F8 /* UIKit.framework in Frameworks */,
-				7F4C2D9519739E13006045F8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7F4DE968197375160030B821 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -118,62 +47,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7F4C2D8019739E12006045F8 /* EMControllerManagerExample */ = {
-			isa = PBXGroup;
-			children = (
-				7F4C2D8919739E12006045F8 /* AppDelegate.h */,
-				7F4C2D8A19739E12006045F8 /* AppDelegate.m */,
-				7F4C2D8C19739E12006045F8 /* Images.xcassets */,
-				7F4C2D8119739E12006045F8 /* Supporting Files */,
-				7F4C2DA819739E54006045F8 /* Test1ViewController.h */,
-				7F4C2DA919739E54006045F8 /* Test1ViewController.m */,
-				7F4C2DAB19739E63006045F8 /* Test2ViewController.h */,
-				7F4C2DAC19739E63006045F8 /* Test2ViewController.m */,
-				7F4C2DB21973A3CE006045F8 /* Test3ViewController.h */,
-				7F4C2DB31973A3CE006045F8 /* Test3ViewController.m */,
-				7F4C2DB51973A3DB006045F8 /* Test4ViewController.h */,
-				7F4C2DB61973A3DB006045F8 /* Test4ViewController.m */,
-				7FF4978E1973B7C200512033 /* ViewControllerConfig.json */,
-				7FAF60F5197CA43F00D9BE2F /* ViewControllerConfig.plist */,
-			);
-			path = EMControllerManagerExample;
-			sourceTree = "<group>";
-		};
-		7F4C2D8119739E12006045F8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7F4C2D8219739E12006045F8 /* EMControllerManagerExample-Info.plist */,
-				7F4C2D8319739E12006045F8 /* InfoPlist.strings */,
-				7F4C2D8619739E12006045F8 /* main.m */,
-				7F4C2D8819739E12006045F8 /* EMControllerManagerExample-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7F4C2D9919739E13006045F8 /* EMControllerManagerExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				7F4C2D9F19739E13006045F8 /* EMControllerManagerExampleTests.m */,
-				7F4C2D9A19739E13006045F8 /* Supporting Files */,
-			);
-			path = EMControllerManagerExampleTests;
-			sourceTree = "<group>";
-		};
-		7F4C2D9A19739E13006045F8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7F4C2D9B19739E13006045F8 /* EMControllerManagerExampleTests-Info.plist */,
-				7F4C2D9C19739E13006045F8 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		7F4DE961197375160030B821 = {
 			isa = PBXGroup;
 			children = (
 				7F4DE970197375160030B821 /* EMControllerManager */,
-				7F4C2D8019739E12006045F8 /* EMControllerManagerExample */,
-				7F4C2D9919739E13006045F8 /* EMControllerManagerExampleTests */,
 				7F4C2D7919739E12006045F8 /* Frameworks */,
 				7F4DE96F197375160030B821 /* Products */,
 			);
@@ -183,8 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				7F4DE96E197375160030B821 /* EMControllerManager.framework */,
-				7F4C2D7819739E12006045F8 /* EMControllerManagerExample.app */,
-				7F4C2D9219739E12006045F8 /* EMControllerManagerExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,41 +98,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7F4C2D7719739E12006045F8 /* EMControllerManagerExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7F4C2DA519739E13006045F8 /* Build configuration list for PBXNativeTarget "EMControllerManagerExample" */;
-			buildPhases = (
-				7F4C2D7419739E12006045F8 /* Sources */,
-				7F4C2D7519739E12006045F8 /* Frameworks */,
-				7F4C2D7619739E12006045F8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = EMControllerManagerExample;
-			productName = EMControllerManagerExample;
-			productReference = 7F4C2D7819739E12006045F8 /* EMControllerManagerExample.app */;
-			productType = "com.apple.product-type.application";
-		};
-		7F4C2D9119739E12006045F8 /* EMControllerManagerExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7F4C2DA619739E13006045F8 /* Build configuration list for PBXNativeTarget "EMControllerManagerExampleTests" */;
-			buildPhases = (
-				7F4C2D8E19739E12006045F8 /* Sources */,
-				7F4C2D8F19739E12006045F8 /* Frameworks */,
-				7F4C2D9019739E12006045F8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7F4C2D9819739E13006045F8 /* PBXTargetDependency */,
-			);
-			name = EMControllerManagerExampleTests;
-			productName = EMControllerManagerExampleTests;
-			productReference = 7F4C2D9219739E12006045F8 /* EMControllerManagerExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		7F4DE96D197375160030B821 /* EMControllerManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F4DE979197375160030B821 /* Build configuration list for PBXNativeTarget "EMControllerManager" */;
@@ -287,11 +127,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = EastMoney;
-				TargetAttributes = {
-					7F4C2D9119739E12006045F8 = {
-						TestTargetID = 7F4DE96D197375160030B821;
-					};
-				};
 			};
 			buildConfigurationList = 7F4DE965197375160030B821 /* Build configuration list for PBXProject "EMControllerManager" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -306,32 +141,11 @@
 			projectRoot = "";
 			targets = (
 				7F4DE96D197375160030B821 /* EMControllerManager */,
-				7F4C2D7719739E12006045F8 /* EMControllerManagerExample */,
-				7F4C2D9119739E12006045F8 /* EMControllerManagerExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7F4C2D7619739E12006045F8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F4C2D8519739E12006045F8 /* InfoPlist.strings in Resources */,
-				7FAF60F6197CA43F00D9BE2F /* ViewControllerConfig.plist in Resources */,
-				7FF4978F1973B7C200512033 /* ViewControllerConfig.json in Resources */,
-				7F4C2D8D19739E12006045F8 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F4C2D9019739E12006045F8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F4C2D9E19739E13006045F8 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7F4DE96A197375160030B821 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,28 +202,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7F4C2D7419739E12006045F8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F4C2DB71973A3DB006045F8 /* Test4ViewController.m in Sources */,
-				7F4C2DAD19739E63006045F8 /* Test2ViewController.m in Sources */,
-				7F4C2DAA19739E54006045F8 /* Test1ViewController.m in Sources */,
-				7F4C2DB41973A3CE006045F8 /* Test3ViewController.m in Sources */,
-				7F4C2DA719739E2F006045F8 /* EMControllerManager.m in Sources */,
-				7F4C2D8B19739E12006045F8 /* AppDelegate.m in Sources */,
-				7F4C2D8719739E12006045F8 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F4C2D8E19739E12006045F8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F4C2DA019739E13006045F8 /* EMControllerManagerExampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7F4DE967197375160030B821 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,31 +212,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		7F4C2D9819739E13006045F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7F4C2D7719739E12006045F8 /* EMControllerManagerExample */;
-			targetProxy = 7F4C2D9719739E13006045F8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		7F4C2D8319739E12006045F8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F4C2D8419739E12006045F8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7F4C2D9C19739E13006045F8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F4C2D9D19739E13006045F8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		7F4DE973197375160030B821 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -456,78 +224,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7F4C2DA119739E13006045F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EMControllerManagerExample/EMControllerManagerExample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "EMControllerManagerExample/EMControllerManagerExample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		7F4C2DA219739E13006045F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EMControllerManagerExample/EMControllerManagerExample-Prefix.pch";
-				INFOPLIST_FILE = "EMControllerManagerExample/EMControllerManagerExample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		7F4C2DA319739E13006045F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EMControllerManager.framework/Versions/A/EMControllerManager";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EMControllerManagerExample/EMControllerManagerExample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "EMControllerManagerExampleTests/EMControllerManagerExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		7F4C2DA419739E13006045F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EMControllerManager.framework/Versions/A/EMControllerManager";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EMControllerManagerExample/EMControllerManagerExample-Prefix.pch";
-				INFOPLIST_FILE = "EMControllerManagerExampleTests/EMControllerManagerExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 		7F4DE977197375160030B821 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -645,24 +341,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F4C2DA519739E13006045F8 /* Build configuration list for PBXNativeTarget "EMControllerManagerExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7F4C2DA119739E13006045F8 /* Debug */,
-				7F4C2DA219739E13006045F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7F4C2DA619739E13006045F8 /* Build configuration list for PBXNativeTarget "EMControllerManagerExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7F4C2DA319739E13006045F8 /* Debug */,
-				7F4C2DA419739E13006045F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		7F4DE965197375160030B821 /* Build configuration list for PBXProject "EMControllerManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

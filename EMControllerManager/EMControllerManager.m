@@ -71,7 +71,7 @@ static NSString *errorDomain = @"EMControllerManagerErrorDomain";
                 return NO;
             } else if(![configMapping isKindOfClass:[NSDictionary class]]) {
                 if (error != NULL) {
-                    NSError *e = [NSError errorWithDomain:errorDomain code:-1 userInfo:@{@"message":@"Your JSON root is not a dictionary"}];
+                    NSError *e = [NSError errorWithDomain:errorDomain code:-1 userInfo:@{@"message":@"JSON file cannot be parsed to a dictionary"}];
                     *error = e;
                 }
                 return NO;
@@ -82,11 +82,33 @@ static NSString *errorDomain = @"EMControllerManagerErrorDomain";
             configMapping = [NSDictionary dictionaryWithContentsOfFile:path];
             if (![configMapping isKindOfClass: [NSDictionary class]]) {
                 if (error != NULL) {
-                    NSError *e = [NSError errorWithDomain:errorDomain code:-1 userInfo:@{@"message":@"Your Plist root is not a dictionary"}];
+                    NSError *e = [NSError errorWithDomain:errorDomain code:-1 userInfo:@{@"message":@"Plist file cannot be parsed to a dictionary"}];
                     *error = e;
                 }
                 return NO;
             }
+        }
+            break;
+        case EMControllerManagerConfigFileTypeYAML:{
+            if (!self.yamlAdapter) {
+                if (error != NULL) {
+                    NSError *e = [NSError errorWithDomain:errorDomain code:-1 userInfo:@{@"message":@"Missing YAML adapter"}];
+                    *error = e;
+                }
+                return NO;
+            }
+            NSError *e = nil;
+            configMapping = [self.yamlAdapter dictionaryFromYAMLData:fileData error:&e];
+            if (![configMapping isKindOfClass:[NSDictionary class]]) {
+                if (error != NULL) {
+                    if (!e) {
+                        e = [NSError errorWithDomain:errorDomain code:-1 userInfo:@{@"message":@"YAML file cannot be parsed to a dictionary"}];
+                    }
+                    *error = e;
+                }
+                return NO;
+            }
+            
         }
             break;
             
@@ -103,7 +125,7 @@ static NSString *errorDomain = @"EMControllerManagerErrorDomain";
     
     if (configMapping) {
 
-        // check the validation of keys and values
+        // validate keys and values
         [configMapping enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
             
             if (![key isKindOfClass:[NSString class]]) {
@@ -183,7 +205,7 @@ static NSString *errorDomain = @"EMControllerManagerErrorDomain";
         instance = [[aClass alloc]init];
         
         // Inject dependencies into the instance
-        // We should notice that a dependent item is unnecessarily a configured class, it can be a string, a bool, or a number.
+        // We should notice that a dependent item is not necessarily a configured class, it can be a string, a bool, or a number.
         // However, if a dependent item is a string, it should start with '@', or it would be considered as a configured class name.
         [configItem.dependencies enumerateKeysAndObjectsUsingBlock:^(NSString *propertyName, id obj, BOOL *stop) {
             if (![propertyName isKindOfClass:[NSString class]]) {
@@ -195,8 +217,13 @@ static NSString *errorDomain = @"EMControllerManagerErrorDomain";
                 // Now that we know it's a string, we should determine if it's a configured class name or a simple string
                 NSString *str = (NSString *)obj;
                 if ([str hasPrefix:@"@"]) {
-                    // it's a simple string
-                    str = [str stringByReplacingOccurrencesOfString:@"@" withString:@""];
+                    // it's a simple string, remove "@".
+                    if (str.length > 1) {
+                        str = [str substringFromIndex:1];
+                    }else{
+                        str = @"";
+                    }
+                    
                     [instance setValue:str forKeyPath:propertyName];
                     return;
                 }else{
