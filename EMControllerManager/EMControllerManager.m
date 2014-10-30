@@ -120,7 +120,7 @@ static NSString *errorDomain = @"EMControllerManagerErrorDomain";
                 }
                 EMControllerConfigItem *anItem = [[EMControllerConfigItem alloc]init];
                 anItem.controllerClass = aControllerClass;
-                anItem.description = (NSString *)obj;
+                anItem.classDescription = (NSString *)obj;
                 [self.controllerConfigMap setObject:anItem forKey:key];
             }else if([obj isKindOfClass:[NSDictionary class]]){
                 NSDictionary *dict = (NSDictionary *)obj;
@@ -136,9 +136,9 @@ static NSString *errorDomain = @"EMControllerManagerErrorDomain";
                 }
                 EMControllerConfigItem *anItem = [[EMControllerConfigItem alloc]init];
                 anItem.controllerClass = aControllerClass;
-                anItem.description = dict[kEMControllerConfigKeyDescription];
-                if (anItem.description.length == 0) {
-                    anItem.description = className; // To ensure that it has a value.
+                anItem.classDescription = dict[kEMControllerConfigKeyDescription];
+                if (anItem.classDescription.length == 0) {
+                    anItem.classDescription = className; // To ensure that it has a value.
                 }
                 //We don't have to check the validation of the dependencies. Only to check it when we are creating an instance.
                 anItem.dependencies = dict[kEMControllerConfigKeyDependencies];
