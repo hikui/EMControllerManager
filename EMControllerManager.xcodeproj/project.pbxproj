@@ -6,30 +6,87 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		7FF06D091A10922400A0EB21 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7FF06D0A1A10922400A0EB21 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				7FF06D0F1A10924D00A0EB21 /* ShellScript */,
+			);
+			dependencies = (
+				7FF06D0E1A10923E00A0EB21 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		7F4DE975197375160030B821 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F4DE973197375160030B821 /* InfoPlist.strings */; };
-		7F4DE97E197375840030B821 /* EMControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4DE97C197375840030B821 /* EMControllerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F4DE97F197375840030B821 /* EMControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4DE97D197375840030B821 /* EMControllerManager.m */; };
+		7FE167CF1A108B0200F0C312 /* libEMControllerManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE167C41A108B0200F0C312 /* libEMControllerManager.a */; };
+		7FE167DC1A108B3900F0C312 /* EMControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE167BF1A108AE400F0C312 /* EMControllerManager.m */; };
+		7FE167DD1A108B3B00F0C312 /* EMControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FE167BE1A108AE400F0C312 /* EMControllerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FF06D061A108C3600A0EB21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7E19739E12006045F8 /* UIKit.framework */; };
+		7FF06D071A108C3C00A0EB21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7A19739E12006045F8 /* Foundation.framework */; };
+		7FF06D111A1093CD00A0EB21 /* ConfigFilesParsingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF06D101A1093CD00A0EB21 /* ConfigFilesParsingTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FE167D01A108B0200F0C312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F4DE962197375160030B821 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FE167C31A108B0200F0C312;
+			remoteInfo = EMControllerManager;
+		};
+		7FF06D0D1A10923E00A0EB21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F4DE962197375160030B821 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FE167C31A108B0200F0C312;
+			remoteInfo = EMControllerManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7FE167C21A108B0200F0C312 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7F4C2D7A19739E12006045F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7F4C2D7C19739E12006045F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7F4C2D7E19739E12006045F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7F4C2D9319739E13006045F8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7F4DE96E197375160030B821 /* EMControllerManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMControllerManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F4DE972197375160030B821 /* EMControllerManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMControllerManager-Info.plist"; sourceTree = "<group>"; };
-		7F4DE974197375160030B821 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7F4DE976197375160030B821 /* EMControllerManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMControllerManager-Prefix.pch"; sourceTree = "<group>"; };
-		7F4DE97C197375840030B821 /* EMControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMControllerManager.h; sourceTree = "<group>"; };
-		7F4DE97D197375840030B821 /* EMControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMControllerManager.m; sourceTree = "<group>"; };
+		7FE167BE1A108AE400F0C312 /* EMControllerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMControllerManager.h; sourceTree = "<group>"; };
+		7FE167BF1A108AE400F0C312 /* EMControllerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMControllerManager.m; sourceTree = "<group>"; };
+		7FE167C41A108B0200F0C312 /* libEMControllerManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEMControllerManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE167CE1A108B0200F0C312 /* EMControllerManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMControllerManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE167D41A108B0200F0C312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF06D101A1093CD00A0EB21 /* ConfigFilesParsingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigFilesParsingTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7F4DE968197375160030B821 /* Frameworks */ = {
+		7FE167C11A108B0200F0C312 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FF06D071A108C3C00A0EB21 /* Foundation.framework in Frameworks */,
+				7FF06D061A108C3600A0EB21 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE167CB1A108B0200F0C312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE167CF1A108B0200F0C312 /* libEMControllerManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				7F4DE970197375160030B821 /* EMControllerManager */,
+				7FE167D21A108B0200F0C312 /* EMControllerManagerTests */,
 				7F4C2D7919739E12006045F8 /* Frameworks */,
 				7F4DE96F197375160030B821 /* Products */,
 			);
@@ -59,7 +117,8 @@
 		7F4DE96F197375160030B821 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F4DE96E197375160030B821 /* EMControllerManager.framework */,
+				7FE167C41A108B0200F0C312 /* libEMControllerManager.a */,
+				7FE167CE1A108B0200F0C312 /* EMControllerManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,19 +126,33 @@
 		7F4DE970197375160030B821 /* EMControllerManager */ = {
 			isa = PBXGroup;
 			children = (
-				7F4DE971197375160030B821 /* Supporting Files */,
-				7F4DE97C197375840030B821 /* EMControllerManager.h */,
-				7F4DE97D197375840030B821 /* EMControllerManager.m */,
+				7FE167BD1A108AE400F0C312 /* Class */,
 			);
 			path = EMControllerManager;
 			sourceTree = "<group>";
 		};
-		7F4DE971197375160030B821 /* Supporting Files */ = {
+		7FE167BD1A108AE400F0C312 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				7F4DE972197375160030B821 /* EMControllerManager-Info.plist */,
-				7F4DE973197375160030B821 /* InfoPlist.strings */,
-				7F4DE976197375160030B821 /* EMControllerManager-Prefix.pch */,
+				7FE167BE1A108AE400F0C312 /* EMControllerManager.h */,
+				7FE167BF1A108AE400F0C312 /* EMControllerManager.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		7FE167D21A108B0200F0C312 /* EMControllerManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FE167D31A108B0200F0C312 /* Supporting Files */,
+				7FF06D101A1093CD00A0EB21 /* ConfigFilesParsingTests.m */,
+			);
+			path = EMControllerManagerTests;
+			sourceTree = "<group>";
+		};
+		7FE167D31A108B0200F0C312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FE167D41A108B0200F0C312 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -87,28 +160,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7F4DE969197375160030B821 /* Headers */ = {
+		7FE167DB1A108B3100F0C312 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F4DE97E197375840030B821 /* EMControllerManager.h in Headers */,
+				7FE167DD1A108B3B00F0C312 /* EMControllerManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7F4DE96D197375160030B821 /* EMControllerManager */ = {
+		7FE167C31A108B0200F0C312 /* EMControllerManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F4DE979197375160030B821 /* Build configuration list for PBXNativeTarget "EMControllerManager" */;
+			buildConfigurationList = 7FE167D51A108B0200F0C312 /* Build configuration list for PBXNativeTarget "EMControllerManager" */;
 			buildPhases = (
-				7F4DE966197375160030B821 /* ShellScript */,
-				7F4DE967197375160030B821 /* Sources */,
-				7F4DE968197375160030B821 /* Frameworks */,
-				7F4DE969197375160030B821 /* Headers */,
-				7F4DE96A197375160030B821 /* Resources */,
-				7F4DE96B197375160030B821 /* ShellScript */,
-				7F4DE96C197375160030B821 /* ShellScript */,
+				7FE167C01A108B0200F0C312 /* Sources */,
+				7FE167C11A108B0200F0C312 /* Frameworks */,
+				7FE167DB1A108B3100F0C312 /* Headers */,
+				7FE167C21A108B0200F0C312 /* CopyFiles */,
+				7FF06D081A108E7300A0EB21 /* Build Framework */,
 			);
 			buildRules = (
 			);
@@ -116,8 +187,26 @@
 			);
 			name = EMControllerManager;
 			productName = EMControllerManager;
-			productReference = 7F4DE96E197375160030B821 /* EMControllerManager.framework */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 7FE167C41A108B0200F0C312 /* libEMControllerManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7FE167CD1A108B0200F0C312 /* EMControllerManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FE167D81A108B0200F0C312 /* Build configuration list for PBXNativeTarget "EMControllerManagerTests" */;
+			buildPhases = (
+				7FE167CA1A108B0200F0C312 /* Sources */,
+				7FE167CB1A108B0200F0C312 /* Frameworks */,
+				7FE167CC1A108B0200F0C312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FE167D11A108B0200F0C312 /* PBXTargetDependency */,
+			);
+			name = EMControllerManagerTests;
+			productName = EMControllerManagerTests;
+			productReference = 7FE167CE1A108B0200F0C312 /* EMControllerManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -127,6 +216,17 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = EastMoney;
+				TargetAttributes = {
+					7FE167C31A108B0200F0C312 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					7FE167CD1A108B0200F0C312 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					7FF06D091A10922400A0EB21 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
 			};
 			buildConfigurationList = 7F4DE965197375160030B821 /* Build configuration list for PBXProject "EMControllerManager" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -140,38 +240,39 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F4DE96D197375160030B821 /* EMControllerManager */,
+				7FE167C31A108B0200F0C312 /* EMControllerManager */,
+				7FE167CD1A108B0200F0C312 /* EMControllerManagerTests */,
+				7FF06D091A10922400A0EB21 /* Framework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7F4DE96A197375160030B821 /* Resources */ = {
+		7FE167CC1A108B0200F0C312 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F4DE975197375160030B821 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7F4DE966197375160030B821 /* ShellScript */ = {
+		7FF06D081A108E7300A0EB21 /* Build Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Build Framework";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
 		};
-		7F4DE96B197375160030B821 /* ShellScript */ = {
+		7FF06D0F1A10924D00A0EB21 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -182,46 +283,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "HEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Versions/$FRAMEWORK_VERSION/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$(find $FRAMEWORK_HEADERS_DIR/. -not -type d 2> /dev/null | sed -e \"s@.*/@@g\")\n\nFIND_OPTS=\"\"\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n  if [ -n \"$FIND_OPTS\" ]; then\n    FIND_OPTS=\"$FIND_OPTS -o\"\n  fi\n  FIND_OPTS=\"$FIND_OPTS -name '$PUBLIC_HEADER'\"\ndone\n\nif [ -n \"$FIND_OPTS\" ]; then\n  for ORIG_HEADER in $(eval \"find $HEADERS_ROOT/. $FIND_OPTS\" 2> /dev/null | sed -e \"s@^$HEADERS_ROOT/./@@g\"); do\n    PUBLIC_HEADER=$(basename $ORIG_HEADER)\n    RELATIVE_PATH=$(dirname $ORIG_HEADER)\n    if [ -e $FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER ]; then\n      mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n      mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\n    fi\n  done\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7F4DE96C197375160030B821 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Make sure the other platform gets built\n\necho \"Build other platform\"\n\necho xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n\n\n# Build the fat static library binary\n\necho \"Create universal static library\"\n\nif [[ \"$XCODE_VERSION_MAJOR\" == \"0500\" ]]\nthen\n    echo \"$DT_TOOLCHAIN_DIR/usr/bin/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$DT_TOOLCHAIN_DIR/usr/bin/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\nelse\n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\nfi \n\necho mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nmv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n\n\n# Build framework structure\n\necho \"Build symlinks\"\n\necho ln -sfh $FRAMEWORK_VERSION \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\nln -sfh $FRAMEWORK_VERSION \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\necho ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\necho ln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\nln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\necho ln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\nln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\n\n\n# Link to binary for unit tests\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework\"\nln -sfh \"../${WRAPPER_NAME}/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework/.fake_fw_testing\"\n\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\n# Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n\necho \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n\necho rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\necho cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "set -e\n \n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\n  exit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n \nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n                     -target \"${TARGET_NAME}\" \\\n                     -configuration \"${CONFIGURATION}\" \\\n                     -sdk \"${1}\" \\\n                     ONLY_ACTIVE_ARCH=NO \\\n                     BUILD_DIR=\"${BUILD_DIR}\" \\\n                     OBJROOT=\"${OBJROOT}\" \\\n                     BUILD_ROOT=\"${BUILD_ROOT}\" \\\n                     SYMROOT=\"${SYMROOT}\" $ACTION\n}\n \nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\n  RW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n  echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n  exit 1\nfi\n \n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\n  RW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n  echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n  exit 1\nfi\n \n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\n  RW_OTHER_PLATFORM=iphonesimulator\nelse\n  RW_OTHER_PLATFORM=iphoneos\nfi\n \n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\n  RW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\n  echo \"Could not find other platform build directory.\"\n  exit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n \n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\n    build_static_library \"${SDK_NAME}\"\nfi\n \n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n                 \"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n                 \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n      \"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n \n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7F4DE967197375160030B821 /* Sources */ = {
+		7FE167C01A108B0200F0C312 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F4DE97F197375840030B821 /* EMControllerManager.m in Sources */,
+				7FE167DC1A108B3900F0C312 /* EMControllerManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE167CA1A108B0200F0C312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF06D111A1093CD00A0EB21 /* ConfigFilesParsingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		7F4DE973197375160030B821 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F4DE974197375160030B821 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		7FE167D11A108B0200F0C312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FE167C31A108B0200F0C312 /* EMControllerManager */;
+			targetProxy = 7FE167D01A108B0200F0C312 /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+		7FF06D0E1A10923E00A0EB21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FE167C31A108B0200F0C312 /* EMControllerManager */;
+			targetProxy = 7FF06D0D1A10923E00A0EB21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7F4DE977197375160030B821 /* Debug */ = {
@@ -292,49 +388,92 @@
 			};
 			name = Release;
 		};
-		7F4DE97A197375160030B821 /* Debug */ = {
+		7FE167D61A108B0200F0C312 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				DEAD_CODE_STRIPPING = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EMControllerManager/EMControllerManager-Prefix.pch";
-				INFOPLIST_FILE = "EMControllerManager/EMControllerManager-Info.plist";
-				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				LINK_WITH_STANDARD_LIBRARIES = NO;
-				MACH_O_TYPE = mh_object;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "/include/${PROJECT_NAME}";
 				SKIP_INSTALL = YES;
-				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
-				WRAPPER_EXTENSION = framework;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
-		7F4DE97B197375160030B821 /* Release */ = {
+		7FE167D71A108B0200F0C312 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EMControllerManager/EMControllerManager-Prefix.pch";
-				INFOPLIST_FILE = "EMControllerManager/EMControllerManager-Info.plist";
-				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				LINK_WITH_STANDARD_LIBRARIES = NO;
-				MACH_O_TYPE = mh_object;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "/include/${PROJECT_NAME}";
 				SKIP_INSTALL = YES;
-				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
-				WRAPPER_EXTENSION = framework;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		7FE167D91A108B0200F0C312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EMControllerManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7FE167DA1A108B0200F0C312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EMControllerManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7FF06D0B1A10922400A0EB21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7FF06D0C1A10922400A0EB21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -350,14 +489,31 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F4DE979197375160030B821 /* Build configuration list for PBXNativeTarget "EMControllerManager" */ = {
+		7FE167D51A108B0200F0C312 /* Build configuration list for PBXNativeTarget "EMControllerManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F4DE97A197375160030B821 /* Debug */,
-				7F4DE97B197375160030B821 /* Release */,
+				7FE167D61A108B0200F0C312 /* Debug */,
+				7FE167D71A108B0200F0C312 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		7FE167D81A108B0200F0C312 /* Build configuration list for PBXNativeTarget "EMControllerManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FE167D91A108B0200F0C312 /* Debug */,
+				7FE167DA1A108B0200F0C312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF06D0A1A10922400A0EB21 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF06D0B1A10922400A0EB21 /* Debug */,
+				7FF06D0C1A10922400A0EB21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
