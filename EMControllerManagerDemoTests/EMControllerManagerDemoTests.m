@@ -1,20 +1,19 @@
 //
-//  ConfigFilesParsingTests.m
-//  EMControllerManager
+//  EMControllerManagerDemoTests.m
+//  EMControllerManagerDemoTests
 //
-//  Created by 缪和光 on 14/11/10.
-//  Copyright (c) 2014年 EastMoney. All rights reserved.
+//  Created by 缪和光 on 23/11/2014.
+//  Copyright (c) 2014 EastMoney. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
 #import <UIKit/UIKit.h>
-#import "EMControllerManager.h"
+#import <XCTest/XCTest.h>
 
-@interface ConfigFilesParsingTests : XCTestCase
+@interface EMControllerManagerDemoTests : XCTestCase
 
 @end
 
-@implementation ConfigFilesParsingTests
+@implementation EMControllerManagerDemoTests
 
 - (void)setUp {
     [super setUp];

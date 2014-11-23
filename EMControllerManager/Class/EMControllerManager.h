@@ -61,6 +61,7 @@ typedef NS_ENUM(NSUInteger, EMControllerManagerConfigFileType) {
 @property (nonatomic, unsafe_unretained) Class controllerClass;
 @property (nonatomic, copy) NSString *controllerClassName;
 @property (nonatomic, copy) NSString *classDescription;
+@property (nonatomic, copy) NSString *nibName;
 @property (nonatomic, copy) NSDictionary *dependencies;
 @property (nonatomic, unsafe_unretained) NSInteger tag;
 

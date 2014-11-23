@@ -28,6 +28,14 @@
 		7FF06D061A108C3600A0EB21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7E19739E12006045F8 /* UIKit.framework */; };
 		7FF06D071A108C3C00A0EB21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C2D7A19739E12006045F8 /* Foundation.framework */; };
 		7FF06D111A1093CD00A0EB21 /* ConfigFilesParsingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF06D101A1093CD00A0EB21 /* ConfigFilesParsingTests.m */; };
+		A419AA9D1A220685006C71EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A419AA9C1A220685006C71EE /* main.m */; };
+		A419AAA01A220685006C71EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A419AA9F1A220685006C71EE /* AppDelegate.m */; };
+		A419AAA31A220685006C71EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A419AAA21A220685006C71EE /* ViewController.m */; };
+		A419AAA61A220685006C71EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A419AAA41A220685006C71EE /* Main.storyboard */; };
+		A419AAA81A220685006C71EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A419AAA71A220685006C71EE /* Images.xcassets */; };
+		A419AAAB1A220685006C71EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A419AAA91A220685006C71EE /* LaunchScreen.xib */; };
+		A419AAB71A220686006C71EE /* EMControllerManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A419AAB61A220686006C71EE /* EMControllerManagerDemoTests.m */; };
+		A419AABE1A2206A8006C71EE /* EMControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE167BF1A108AE400F0C312 /* EMControllerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7FE167C31A108B0200F0C312;
 			remoteInfo = EMControllerManager;
+		};
+		A419AAB11A220685006C71EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F4DE962197375160030B821 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A419AA971A220685006C71EE;
+			remoteInfo = EMControllerManagerDemo;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -70,6 +85,19 @@
 		7FE167CE1A108B0200F0C312 /* EMControllerManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMControllerManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE167D41A108B0200F0C312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FF06D101A1093CD00A0EB21 /* ConfigFilesParsingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigFilesParsingTests.m; sourceTree = "<group>"; };
+		A419AA981A220685006C71EE /* EMControllerManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMControllerManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A419AA9B1A220685006C71EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A419AA9C1A220685006C71EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A419AA9E1A220685006C71EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A419AA9F1A220685006C71EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A419AAA11A220685006C71EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A419AAA21A220685006C71EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A419AAA51A220685006C71EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A419AAA71A220685006C71EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A419AAAA1A220685006C71EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A419AAB01A220685006C71EE /* EMControllerManagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMControllerManagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A419AAB51A220686006C71EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A419AAB61A220686006C71EE /* EMControllerManagerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMControllerManagerDemoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +115,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FE167CF1A108B0200F0C312 /* libEMControllerManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A419AA951A220685006C71EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A419AAAD1A220685006C71EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +151,8 @@
 			children = (
 				7F4DE970197375160030B821 /* EMControllerManager */,
 				7FE167D21A108B0200F0C312 /* EMControllerManagerTests */,
+				A419AA991A220685006C71EE /* EMControllerManagerDemo */,
+				A419AAB31A220686006C71EE /* EMControllerManagerDemoTests */,
 				7F4C2D7919739E12006045F8 /* Frameworks */,
 				7F4DE96F197375160030B821 /* Products */,
 			);
@@ -119,6 +163,8 @@
 			children = (
 				7FE167C41A108B0200F0C312 /* libEMControllerManager.a */,
 				7FE167CE1A108B0200F0C312 /* EMControllerManagerTests.xctest */,
+				A419AA981A220685006C71EE /* EMControllerManagerDemo.app */,
+				A419AAB01A220685006C71EE /* EMControllerManagerDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +199,47 @@
 			isa = PBXGroup;
 			children = (
 				7FE167D41A108B0200F0C312 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A419AA991A220685006C71EE /* EMControllerManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A419AA9E1A220685006C71EE /* AppDelegate.h */,
+				A419AA9F1A220685006C71EE /* AppDelegate.m */,
+				A419AAA11A220685006C71EE /* ViewController.h */,
+				A419AAA21A220685006C71EE /* ViewController.m */,
+				A419AAA41A220685006C71EE /* Main.storyboard */,
+				A419AAA71A220685006C71EE /* Images.xcassets */,
+				A419AAA91A220685006C71EE /* LaunchScreen.xib */,
+				A419AA9A1A220685006C71EE /* Supporting Files */,
+			);
+			path = EMControllerManagerDemo;
+			sourceTree = "<group>";
+		};
+		A419AA9A1A220685006C71EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A419AA9B1A220685006C71EE /* Info.plist */,
+				A419AA9C1A220685006C71EE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A419AAB31A220686006C71EE /* EMControllerManagerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A419AAB61A220686006C71EE /* EMControllerManagerDemoTests.m */,
+				A419AAB41A220686006C71EE /* Supporting Files */,
+			);
+			path = EMControllerManagerDemoTests;
+			sourceTree = "<group>";
+		};
+		A419AAB41A220686006C71EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A419AAB51A220686006C71EE /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -208,6 +295,41 @@
 			productReference = 7FE167CE1A108B0200F0C312 /* EMControllerManagerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A419AA971A220685006C71EE /* EMControllerManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A419AABC1A220686006C71EE /* Build configuration list for PBXNativeTarget "EMControllerManagerDemo" */;
+			buildPhases = (
+				A419AA941A220685006C71EE /* Sources */,
+				A419AA951A220685006C71EE /* Frameworks */,
+				A419AA961A220685006C71EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMControllerManagerDemo;
+			productName = EMControllerManagerDemo;
+			productReference = A419AA981A220685006C71EE /* EMControllerManagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A419AAAF1A220685006C71EE /* EMControllerManagerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A419AABD1A220686006C71EE /* Build configuration list for PBXNativeTarget "EMControllerManagerDemoTests" */;
+			buildPhases = (
+				A419AAAC1A220685006C71EE /* Sources */,
+				A419AAAD1A220685006C71EE /* Frameworks */,
+				A419AAAE1A220685006C71EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A419AAB21A220685006C71EE /* PBXTargetDependency */,
+			);
+			name = EMControllerManagerDemoTests;
+			productName = EMControllerManagerDemoTests;
+			productReference = A419AAB01A220685006C71EE /* EMControllerManagerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,6 +348,13 @@
 					7FF06D091A10922400A0EB21 = {
 						CreatedOnToolsVersion = 6.1;
 					};
+					A419AA971A220685006C71EE = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					A419AAAF1A220685006C71EE = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = A419AA971A220685006C71EE;
+					};
 				};
 			};
 			buildConfigurationList = 7F4DE965197375160030B821 /* Build configuration list for PBXProject "EMControllerManager" */;
@@ -234,6 +363,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7F4DE961197375160030B821;
 			productRefGroup = 7F4DE96F197375160030B821 /* Products */;
@@ -243,12 +373,31 @@
 				7FE167C31A108B0200F0C312 /* EMControllerManager */,
 				7FE167CD1A108B0200F0C312 /* EMControllerManagerTests */,
 				7FF06D091A10922400A0EB21 /* Framework */,
+				A419AA971A220685006C71EE /* EMControllerManagerDemo */,
+				A419AAAF1A220685006C71EE /* EMControllerManagerDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7FE167CC1A108B0200F0C312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A419AA961A220685006C71EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A419AAA61A220685006C71EE /* Main.storyboard in Resources */,
+				A419AAAB1A220685006C71EE /* LaunchScreen.xib in Resources */,
+				A419AAA81A220685006C71EE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A419AAAE1A220685006C71EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,6 +453,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A419AA941A220685006C71EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A419AABE1A2206A8006C71EE /* EMControllerManager.m in Sources */,
+				A419AAA31A220685006C71EE /* ViewController.m in Sources */,
+				A419AAA01A220685006C71EE /* AppDelegate.m in Sources */,
+				A419AA9D1A220685006C71EE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A419AAAC1A220685006C71EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A419AAB71A220686006C71EE /* EMControllerManagerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -317,7 +485,31 @@
 			target = 7FE167C31A108B0200F0C312 /* EMControllerManager */;
 			targetProxy = 7FF06D0D1A10923E00A0EB21 /* PBXContainerItemProxy */;
 		};
+		A419AAB21A220685006C71EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A419AA971A220685006C71EE /* EMControllerManagerDemo */;
+			targetProxy = A419AAB11A220685006C71EE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A419AAA41A220685006C71EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A419AAA51A220685006C71EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A419AAA91A220685006C71EE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A419AAAA1A220685006C71EE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7F4DE977197375160030B821 /* Debug */ = {
@@ -477,6 +669,82 @@
 			};
 			name = Release;
 		};
+		A419AAB81A220686006C71EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EMControllerManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A419AAB91A220686006C71EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = EMControllerManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A419AABA1A220686006C71EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EMControllerManagerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EMControllerManagerDemo.app/EMControllerManagerDemo";
+			};
+			name = Debug;
+		};
+		A419AABB1A220686006C71EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EMControllerManagerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EMControllerManagerDemo.app/EMControllerManagerDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -515,6 +783,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A419AABC1A220686006C71EE /* Build configuration list for PBXNativeTarget "EMControllerManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A419AAB81A220686006C71EE /* Debug */,
+				A419AAB91A220686006C71EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A419AABD1A220686006C71EE /* Build configuration list for PBXNativeTarget "EMControllerManagerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A419AABA1A220686006C71EE /* Debug */,
+				A419AABB1A220686006C71EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

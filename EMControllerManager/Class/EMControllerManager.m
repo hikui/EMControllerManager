@@ -11,7 +11,8 @@
 static NSString *kEMControllerConfigKeyClassName    = @"ClassName";
 static NSString *kEMControllerConfigKeyDescription  = @"Description";
 static NSString *kEMControllerConfigKeyDependencies = @"Dependencies";
-static NSString *kEMControllerCOnfigKeyTag          = @"Tag";
+static NSString *kEMControllerConfigKeyTag          = @"Tag";
+static NSString *kEMControllerConfigKeyNibName      = @"NibName";
 
 static NSString *errorDomain = @"EMControllerManagerErrorDomain";
 
@@ -162,9 +163,10 @@ static NSString *errorDomain = @"EMControllerManagerErrorDomain";
                 if (anItem.classDescription.length == 0) {
                     anItem.classDescription = className; // To ensure that it has a value.
                 }
+                anItem.nibName = dict[kEMControllerConfigKeyNibName];
                 //We don't have to check the validation of the dependencies. Only to check it when we are creating an instance.
                 anItem.dependencies = dict[kEMControllerConfigKeyDependencies];
-                anItem.tag = [dict[kEMControllerCOnfigKeyTag]integerValue];
+                anItem.tag = [dict[kEMControllerConfigKeyTag]integerValue];
                 [self.controllerConfigMap setObject:anItem forKey:key];
             }else {
                 [self notifyInvalidConfigAtKey:key];
@@ -202,8 +204,11 @@ static NSString *errorDomain = @"EMControllerManagerErrorDomain";
     }
     id instance = nil;
     if (aClass) {
-        instance = [[aClass alloc]init];
-        
+        if (configItem.nibName) {
+            instance = [[aClass alloc]initWithNibName:configItem.nibName bundle:[NSBundle mainBundle]];
+        }else{
+            instance = [[aClass alloc]init];
+        }
         // Inject dependencies into the instance
         // We should notice that a dependent item is not necessarily a configured class, it can be a string, a bool, or a number.
         // However, if a dependent item is a string, it should start with '@', or it would be considered as a configured class name.
