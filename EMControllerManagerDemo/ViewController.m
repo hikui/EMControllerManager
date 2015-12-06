@@ -3,7 +3,7 @@
 //  EMControllerManagerDemo
 //
 //  Created by 缪和光 on 23/11/2014.
-//  Copyright (c) 2014 EastMoney. All rights reserved.
+//  Copyright (c) 2014 Heguang Miao. All rights reserved.
 //
 
 #import "ViewController.h"
